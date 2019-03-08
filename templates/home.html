@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+
+  <body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Word Count
+      </h1>
+      <p class="subtitle">
+        Insert your text in the <strong>BOX</strong>!
+      </p>
+    </div>
+
+    <form action = "{%url 'count' %}">
+      <textarea cols="40" rows="5" name="fulltext"></textarea>
+      <br />
+      <input class="button is-success" type="submit" value="Count!">
+    </form>
+  </section>
+  </body>
+
+</html>
